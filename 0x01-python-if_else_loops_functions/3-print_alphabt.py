@@ -3,4 +3,4 @@ for char in range(97, 122):
     if char == 101 or char == 113:
         continue
     else:
-        print(f"{chr(char)}", end='')
+        print('{}'.format(chr(char)), end='')
