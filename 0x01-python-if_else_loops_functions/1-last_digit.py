@@ -7,8 +7,6 @@ if number > 0:
 else:
     aux = number % -10
 
-print(number, aux)
-
 if aux > 5:
     print(f"Last digit of {number} is {aux} and is greater than 5")
 elif aux == 0:
