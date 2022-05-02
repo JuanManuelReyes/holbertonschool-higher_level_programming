@@ -1,10 +1,8 @@
 #!/bin/python3
 def max_integer(my_list=[]):
     if my_list:
-        intmax = my_list[0]
-        for i in my_list:
-            if i > intmax:
-                intmax = i
+        maxint = my_list[0]
+        for i in range(len(my_list)):
+            if my_list[i] > maxint:
+                macint = my_list[i]
         return intmax
-    else:
-        return None
