@@ -10,7 +10,7 @@
 int is_palindrome(listint_t **head)
 {
         listint_t *aux = *head;
-        int size = 0, i = 0, data[512];
+        unsigned int size = 0, i = 0, data[512];
 
         /*No existe LL*/
         if (head == NULL)
@@ -21,7 +21,7 @@ int is_palindrome(listint_t **head)
                 return (1);
 
         /*Calcula el size*/
-        while (aux)
+        while (aux != NULL)
         {
                 aux = aux->next;
                 size += 1;
@@ -32,7 +32,7 @@ int is_palindrome(listint_t **head)
 
         aux = *head;
         /*Compara con data*/
-        while (aux)
+        while (aux != NULL)
         {
                 data[i++] = aux->n;
                 aux = aux->next;
