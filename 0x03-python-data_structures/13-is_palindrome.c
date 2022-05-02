@@ -10,7 +10,7 @@
 int is_palindrome(listint_t **head)
 {
         listint_t *aux = *head;
-        unsigned int size = 0, i = 0, data[512];
+        int size = 0, i = 0, data[1024];
 
         /*No existe LL*/
         if (head == NULL)
