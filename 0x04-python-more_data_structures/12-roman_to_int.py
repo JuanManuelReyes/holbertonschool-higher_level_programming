@@ -15,16 +15,20 @@ def equivalents(r):
         return 500
     if (r == 'M'):
         return 1000
-    return 0
+    return 0 
 
 
 def roman_to_int(roman_string):
     if type(roman_string) is not str or roman_string is None:
-        return None
+        return Nonei
+    if roman_string == "":
+        return 0
     res = 0
     i = 0
     while (i < len(roman_string)):
         s1 = equivalents(roman_string[i])
+        if s1 == 0:
+            return 0
         if (i + 1 < len(roman_string)):
             s2 = equivalents(roman_string[i + 1])
             if (s1 >= s2):
