@@ -20,6 +20,8 @@ def equivalents(r):
 def roman_to_int(roman_string):
     if type(roman_string) is not str:
         return None
+    if roman_string == "":
+        return None
     res = 0
     i = 0
     while (i < len(roman_string)):
