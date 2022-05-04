@@ -16,7 +16,8 @@ def equivalents(r):
     if (r == 'M'):
         return 1000
     return -1
- 
+
+
 def roman_to_int(roman_string):
     if type(roman_string) is not str or roman_string is None:
         return None
@@ -37,5 +38,5 @@ def roman_to_int(roman_string):
         else:
             res = res + s1
             i = i + 1
- 
+
     return res
