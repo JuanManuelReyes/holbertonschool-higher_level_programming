@@ -8,7 +8,7 @@ class Square:
     """
     asd asd asd
     """
-    def __init__(self, size = 0, position=(0, 0)):
+    def __init__(self, size=0, position=(0, 0)):
         """
         asd asd asd
         """
@@ -46,8 +46,8 @@ class Square:
         asd asd asd
         """
         if type(size) is not tuple or len(size) != 2 or \
-         type(size[0]) is not int or type(size[1]) is not int or \
-          size[0] < 0 or size[1] <0:
+                type(size[0]) is not int or type(size[1]) is not int or \
+                size[0] < 0 or size[1] < 0:
             raise TypeError("position must be a tuple of 2 positive integers")
         else:
             self.__position = size
