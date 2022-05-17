@@ -3,6 +3,7 @@
 Class Square
 """
 
+
 class Square:
     """Does Nothing"""
     pass
