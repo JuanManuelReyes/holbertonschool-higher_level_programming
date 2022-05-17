@@ -58,7 +58,6 @@ class Square:
         """
         return ((self.__size) ** 2)
 
-
     def my_print(self):
         """
         asd asd asd
@@ -69,5 +68,5 @@ class Square:
             if self.__position[1] > 0:
                 for i in range(self.__position[1]):
                     print()
-            for i in range(self.__size):
+            for x in range(self.__size):
                 print(" " * self.__position[0] + "#" * self.__size)
