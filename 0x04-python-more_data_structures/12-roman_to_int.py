@@ -15,7 +15,7 @@ def equivalents(r):
         return 500
     if (r == 'M'):
         return 1000
-    return 0
+    return -1
 
 
 def roman_to_int(roman_string):
@@ -27,10 +27,12 @@ def roman_to_int(roman_string):
     i = 0
     while (i < len(roman_string)):
         s1 = equivalents(roman_string[i])
+        if s1 == -1:
+            s1 = 0
         if s1 == 0:
-            return 0
-        if (i + 1 < len(roman_string)):
             s2 = equivalents(roman_string[i + 1])
+            if s2 == -1:
+                s2 = 0
             if (s1 >= s2):
                 res = res + s1
                 i = i + 1
@@ -42,3 +44,4 @@ def roman_to_int(roman_string):
             i = i + 1
 
     return res
+
