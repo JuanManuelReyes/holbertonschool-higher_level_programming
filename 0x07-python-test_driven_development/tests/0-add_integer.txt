@@ -58,6 +58,6 @@
 	>>> print(add_integer("Test"))
 	Traceback (most recent call last):
 	...
-	TypeError: b must be an integer
+	TypeError: a must be an integer
 
 -----------------------------
