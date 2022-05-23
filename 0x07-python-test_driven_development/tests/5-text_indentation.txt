@@ -1,0 +1,67 @@
+======== Function Tests ========
+======= 5-text_indentation.py =======
+
+-------- ImportFunction --------
+        >>> text_indentation = __import__('5-text_indentation').text_indentation
+
+======== Test Cases: ========
+
+-----------------------------
+
+        >>> text_indentation("This. is. a: test? Nope, o yep")
+	This.
+    	<BLANKLINE>
+    	is.
+	<BLANKLINE>
+	a:
+	<BLANKLINE>
+	test?
+	<BLANKLINE>
+	Nope
+
+-----------------------------
+
+        >>> text_indentation("   Test     \n     ?     ")
+        Test
+        ?
+        <BLANKLINE>
+
+-----------------------------
+
+        >>> text_indentation("      Test      ")
+        Test
+
+-----------------------------
+
+     >>> text_indentation("    ")
+
+
+-----------------------------
+
+        >>> text_indentation(1)
+        Traceback (most recent call last):
+        ...
+        TypeError: text must be a string
+
+-----------------------------
+
+        >>> text_indentation(5.5)
+        Traceback (most recent call last):
+        ...
+        TypeError: text must be a string
+
+-----------------------------
+
+        >>> text_indentation(-10)
+        Traceback (most recent call last):
+        ...
+        TypeError: text must be a string
+
+-----------------------------
+
+        >>> text_indentation([[1, 2, 3], [4, 5, 6.7]])
+        Traceback (most recent call last):
+        ...
+        TypeError: text must be a string
+
+-----------------------------
