@@ -36,7 +36,7 @@
 -----------------------------
 
         >>> matrix_divided(None, 2)
-        Trceback (most recent call last):
+        Traceback (most recent call last):
         ...
         TypeError: matrix must be a matrix (list of lists) of integers/floats
 
