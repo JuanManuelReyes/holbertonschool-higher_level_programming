@@ -14,8 +14,8 @@
 
 -----------------------------
 
-        >>> say_my_name("Test ")
-        My name is Test
+        >>> say_my_name("Test")
+        My name is Test 
 
 -----------------------------
 
