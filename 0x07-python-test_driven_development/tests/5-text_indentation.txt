@@ -22,7 +22,7 @@
 -----------------------------
 
         >>> text_indentation("   Test     \n     ?     ")
-        Test 
+        Test     
              ?
         <BLANKLINE>
 
