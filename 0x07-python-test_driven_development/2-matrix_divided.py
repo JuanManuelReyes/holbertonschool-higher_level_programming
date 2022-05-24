@@ -16,17 +16,17 @@ def matrix_divided(matrix, div):
                 raise ZeroDivisionError("division by zero")
 
         new_mtrx = []
-        for i in matrix:
-                if type(i) is not list:
+        for lists in matrix:
+                if type(lists) is not list:
                         raise TypeError(error_msg)
-                if len(i) != len(matrix[0]):
+                if len(lists) != len(matrix[0]):
                         raise TypeError("Each row of the matrix must have the same size")
-                        
+
         new_list = []
-        for x in list:
-            if type(x) is not int and type(x) is not float:
+        for position in lists:
+            if type(position) is not int and type(position) is not float:
                 raise TypeError(error_msg)
-            new_list.append(round(x/div, 2))
+            new_list.append(round(position/div, 2))
         new_mtrx.append(new_list)
         return new_mtrx
         
