@@ -1,4 +1,6 @@
 #!/usr/bin/python3
+"""asd asd asd"""
+
 
 class LockedClass:
     "asd asd asd"
