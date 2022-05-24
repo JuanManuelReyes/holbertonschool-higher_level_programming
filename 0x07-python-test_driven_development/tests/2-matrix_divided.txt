@@ -10,12 +10,12 @@
 
 -----------------------------
 
-        >>> print(matrix_divided([[2, 4, 6], [3, 5, 7]], 2))
+        >>> matrix_divided([[2, 4, 6], [3, 5, 7]], 2)
         [[1, 2, 3], [1.5, 2.5, 3.5]]
 
 -----------------------------
 
-        >>> print(matrix_divided([[1, 2, 3], [4, 5, 6.7]], 9223372036854775807))
+        >>> matrix_divided([[1, 2, 3], [4, 5, 6.7]], 9223372036854775807)
         [[0.0, 0.0, 0.0], [0.0, 0.0, 0.0]]
 
 -----------------------------
@@ -30,75 +30,75 @@
 
 -----------------------------
 
-        >>> print(matrix_divided([[-1.5], [-2.5]], 2.5))
+        >>> matrix_divided([[-1.5], [-2.5]], 2.5)
         [[-0.6], [-1.0]]
 
 -----------------------------
 
-        >>> print(matrix_divided(None, 2))
+        >>> matrix_divided(None, 2)
         TraZZceback (most recent call last):
         ...
         TypeError: matrix must be a matrix (list of lists) of integers/floats
 
 -----------------------------
 
-        >>> print(matrix_divided([], 2))
+        >>> matrix_divided([], 2)
         Traceback (most recent call last):
         ...
         TypeError: matrix must be a matrix (list of lists) of integers/floats
 
 -----------------------------
 
-        >>> print(matrix_divided([[], [], []], 2))
+        >>> matrix_divided([[], [], []], 2)
         Traceback (most recent call last):
         ...
         TypeError: matrix must be a matrix (list of lists) of integers/floats
 
 -----------------------------
 
-        >>> print(matrix_divided([[1, 2, 3], [4]], 2))
+        >>> matrix_divided([[1, 2, 3], [4]], 2)
         Traceback (most recent call last):
         ...
         TypeError: Each row of the matrix must have the same size
 
 -----------------------------
 
-        >>> print(matrix_divided([[1, 2, 3], [4, 5, 6], [7]], 2))
+        >>> matrix_divided([[1, 2, 3], [4, 5, 6], [7]], 2)
         Traceback (most recent call last):
         ...
         TypeError: Each row of the matrix must have the same size
 
 -----------------------------
 
-        >>> print(matrix_divided([["Test"], ["Case"]], 2))
+        >>> matrix_divided([["Test"], ["Case"]], 2)
         Traceback (most recent call last):
         ...
         TypeError: matrix must be a matrix (list of lists) of integers/floats
 
 -----------------------------
 
-        >>> print(matrix_divided([[1, 2, 3], {"test" : 4}], 2))
+        >>> matrix_divided([[1, 2, 3], {"test" : 4}], 2)
         Traceback (most recent call last):
         ...
         TypeError: matrix must be a matrix (list of lists) of integers/floats
 
 -----------------------------
 
-        >>> print(matrix_divided([[1, 2, 3], [4, 5, 6.7]], 2, 100))
+        >>> matrix_divided([[1, 2, 3], [4, 5, 6.7]], 2, 100)
         Traceback (most recent call last):
         ...
         TypeError: matrix_divided() takes 2 positional arguments but 3 were given
 
 -----------------------------
 
-        >>> print(matrix_divided([[1, 2], [3, 4]], 0))
+        >>> matrix_divided([[1, 2], [3, 4]], 0)
         Traceback (most recent call last):
         ...
         ZeroDivisionError: division by zero
 
 -----------------------------
 
-        >>> print(matrix_divided([[1, 2], [3, 4]], "test"))
+        >>> matrix_divided([[1, 2], [3, 4]], "test")
         Traceback (most recent call last):
         ...
         TypeError: div must be a number
