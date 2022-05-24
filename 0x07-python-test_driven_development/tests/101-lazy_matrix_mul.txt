@@ -35,7 +35,7 @@
         >>> lazy_matrix_mul([[4, 2], [3, 6]], [[]])
         Traceback (most recent call last):
         ...
-        ValueError: m_b can't be empty
+        ValueError: shapes (2,2) and (1,0) not aligned: 2 (dim 1) != 1 (dim 0)
 
 -----------------------------
 
