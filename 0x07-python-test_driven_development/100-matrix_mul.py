@@ -5,9 +5,6 @@
 def matrix_mul(m_a, m_b):
         """asd asd asd"""
 
-        if len(m_a[0]) != len(m_b):
-                raise ValueError("m_a and m_b can't be multiplied")
-
         if type(m_a) is not list or type(m_a[0]) is not list:
                 raise TypeError("m_a must be a list")
 
@@ -32,6 +29,9 @@ def matrix_mul(m_a, m_b):
                 for n in x:
                         if type(n) is not float and type(n) is not int:
                                 raise TypeError(error_msg)
+
+        if len(m_a[0]) != len(m_b):
+                raise ValueError("m_a and m_b can't be multiplied")
 
         for x in m_b:
                 if type(x) is not list:
