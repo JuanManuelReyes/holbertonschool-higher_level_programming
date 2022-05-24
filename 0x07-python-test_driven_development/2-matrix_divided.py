@@ -22,10 +22,10 @@ def matrix_divided(matrix, div):
         if len(i) != len(matrix[0]):
             raise TypeError("Each row of the matrix must have the same size")
 
-        list = []
+        lst = []
         for pos in i:
             if type(pos) is not int and type(pos) is not float:
                 raise TypeError(error_msg)
-            list.append(round(pos/div, 2))
-        mtrx.append(list)
+            lst.append(round(pos/div, 2))
+        mtrx.append(lst)
     return mtrx
