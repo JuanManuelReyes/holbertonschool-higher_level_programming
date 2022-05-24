@@ -1,0 +1,66 @@
+======== Function Tests ========
+======= 100-matrix_mul.py =======
+
+-------- ImportFunction --------
+        >>> matrix_mul = __import__('100-matrix_mul').matrix_mul
+
+======== Test Cases: ========
+
+-----------------------------
+
+        >>> matrix_mul([[1, 2], [3, 4]], [[2, 0], [1, 2]])
+        [[4, 4], [10, 8]]  
+
+-----------------------------
+
+        >>> matrix_mul([[1, 1], [1, 1]], [[1, 1], [1, 1]])
+        [[1, 1], [1, 1]]  
+
+-----------------------------
+
+        >>> matrix_mul([[-2.0, -3.0]], [[-2.0], [-4.0]])
+        [[16.0]]  
+
+-----------------------------
+
+        >>> matrix_mul([], [[4, 2], [3, 6]])
+        Traceback (most recent call last):
+        ...
+        ValueError: m_a can't be empty 
+
+-----------------------------
+
+        >>> matrix_mul([[4, 2], [3, 6]], [])
+        Traceback (most recent call last):
+        ...
+        ValueError: m_b can't be empty 
+
+-----------------------------
+
+        >>> matrix_mul([[5, 6], [7, 8, 9, 10]], [[1, 2], [3, 4]])
+        Traceback (most recent call last):
+        ...
+        TypeError: each row of m_a must should be of the same size
+        
+-----------------------------
+
+        >>> matrix_mul([[1, 2], [3, 4]], [[5, 6], [7, 8, 9, 10]])
+        Traceback (most recent call last):
+        ...
+        TypeError: each row of m_b must should be of the same size
+
+-----------------------------
+
+        >>> matrix_mul([["First"], ["Test"]], [["Last"], ["Test"]])
+        Traceback (most recent call last):
+        ...
+        TypeError: m_a should contain only integers or floats
+
+-----------------------------
+
+        >>> matrix_mul((1, 2, 3, 4), [[5, 6], [7, 8,]])
+        Traceback (most recent call last):
+        ...
+        TypeError: m_a must be a list
+
+-----------------------------
