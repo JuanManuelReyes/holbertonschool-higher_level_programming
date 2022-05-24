@@ -8,7 +8,7 @@
 
 -----------------------------
 
-        >>> text_indentation("This. is. a: test? Nope, o yep")
+        >>> text_indentation("This. is. a: test? Nope, or yep")
 	This.
     	<BLANKLINE>
     	is.
@@ -17,7 +17,7 @@
 	<BLANKLINE>
 	test?
 	<BLANKLINE>
-	Nope, o yep
+	Nope, or yep
 
 -----------------------------
 
@@ -25,6 +25,20 @@
         Test
         ?
         <BLANKLINE>
+        <BLANKLINE>
+
+-----------------------------
+
+        >>> text_indentation("   This.    is.   a:   test?       Nope,   or   yep")
+	This.
+    	<BLANKLINE>
+    	is.
+	<BLANKLINE>
+	a:
+	<BLANKLINE>
+	test?
+	<BLANKLINE>
+	Nope, or yep
 
 -----------------------------
 
