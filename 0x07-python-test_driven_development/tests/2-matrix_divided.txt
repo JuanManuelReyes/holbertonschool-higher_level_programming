@@ -35,11 +35,6 @@
 
 -----------------------------
 
-        >>> print(matrix_divided([[True], [False]], True))
-        [[1.0], [0.0]]
-
------------------------------
-
         >>> print(matrix_divided(None, 2))
         Traceback (most recent call last):
         ...
