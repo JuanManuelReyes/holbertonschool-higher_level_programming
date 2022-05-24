@@ -53,8 +53,8 @@ def matrix_mul(m_a, m_b):
                 for y_mb in range(len(m_b[0])):
                         for i in range(len(m_a[0])):
                                 res += m_a[x_ma][i] * m_b[i][y_mb]
-                nl.append(res)
-                res = 0
-        mtrx.append(nl)
+                        nl.append(res)
+                        res = 0
+                mtrx.append(nl)
 
         return mtrx
