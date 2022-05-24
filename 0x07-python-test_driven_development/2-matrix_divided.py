@@ -27,6 +27,7 @@ def matrix_divided(matrix, div):
             if type(position) is not int and type(position) is not float:
                 raise TypeError(error_msg)
             new_list.append(round(position/div, 2))
-        new_mtrx.append(new_list)
-        return new_mtrx
         
+        new_mtrx.append(new_list)
+
+        return new_mtrx
