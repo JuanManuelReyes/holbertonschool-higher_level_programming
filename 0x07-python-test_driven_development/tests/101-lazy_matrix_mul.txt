@@ -63,6 +63,6 @@
         >>> lazy_matrix_mul((1, 2, 3, 4), [[5, 6], [7, 8,]])
         Traceback (most recent call last):
         ...
-        TypeError: m_a must be a list
+        ValueError: shapes (4,) and (2,2) not aligned: 4 (dim 0) != 2 (dim 0)
 
 -----------------------------
