@@ -26,14 +26,14 @@
         >>> matrix_mul([[]], [[4, 2], [3, 6]])
         Traceback (most recent call last):
         ...
-        ValueError: m_a can't be empty 
+        ValueError: m_a can't be empty
 
 -----------------------------
 
         >>> matrix_mul([[4, 2], [3, 6]], [[]])
         Traceback (most recent call last):
         ...
-        ValueError: m_b can't be empty 
+        ValueError: m_b can't be empty
 
 -----------------------------
 
