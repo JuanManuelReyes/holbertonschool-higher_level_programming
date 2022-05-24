@@ -23,7 +23,7 @@
 
         >>> text_indentation("   Test     \n     ?     ")
         Test
-        ?
+             ?
         <BLANKLINE>
         <BLANKLINE>
 
@@ -38,7 +38,7 @@
 	<BLANKLINE>
 	test?
 	<BLANKLINE>
-	Nope, or yep
+	Nope,   or   yep
 
 -----------------------------
 
