@@ -5,17 +5,17 @@
 def matrix_mul(m_a, m_b):
         """asd asd asd"""
 
-        if m_a == [[]] or len(m_a) == 0 or len(m_a[0]) == 0:
-                raise ValueError("m_a can't be empty")
-
-        if m_b == [[]] or len(m_b) == 0 or len(m_b[0]) == 0:
-                raise ValueError("m_b can't be empty")
-
         if type(m_a) is not list or type(m_a[0]) is not list:
                 raise TypeError("m_a must be a list")
 
         if type(m_b) is not list or type(m_b[0]) is not list:
                 raise TypeError("m_b must be a list")
+
+        if m_a == [[]] or len(m_a) == 0 or len(m_a[0]) == 0:
+                raise ValueError("m_a can't be empty")
+
+        if m_b == [[]] or len(m_b) == 0 or len(m_b[0]) == 0:
+                raise ValueError("m_b can't be empty")
 
         for x in m_a:
                 if type(x) is not list:
