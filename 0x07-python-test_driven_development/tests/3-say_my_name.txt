@@ -50,6 +50,6 @@
         >>> say_my_name(None)
         Traceback (most recent call last):
         ...
-T       ypeError: first_name must be a string
+        TypeError: first_name must be a string
 
 -----------------------------
