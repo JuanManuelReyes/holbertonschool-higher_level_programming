@@ -21,14 +21,6 @@
 
 -----------------------------
 
-        >>> text_indentation("   Test     \n     ?     ")
-        Test
-        ?
-        <BLANKLINE>
-        <BLANKLINE>
-
------------------------------
-
         >>> text_indentation("   This.    is.   a:   test?       Nope,   or   yep")
 	This.
     	<BLANKLINE>
