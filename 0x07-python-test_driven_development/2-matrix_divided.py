@@ -10,7 +10,7 @@ def matrix_divided(matrix, div):
                 raise TypeError(errorMessage)
         if type(div) is not int and type(div) is not float:
                 raise TypeError("div must be a number")
-         if div == 0:
+        if div == 0:
                 raise ZeroDivisionError("division by zero")
         new_matrix = []
         for lists in matrix:
