@@ -1,6 +1,4 @@
 #!/usr/bin/python3
-"""asd asd asd"""
-
 import unittest
 
 max_integer = __import__('6-max_integer').max_integer
