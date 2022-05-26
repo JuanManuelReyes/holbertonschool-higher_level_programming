@@ -11,6 +11,11 @@
 
 -----------------------------
 
+	>>> print(add_integer(10))
+	108
+
+-----------------------------
+
 	>>> add_integer(float("inf"), 2)
     Traceback (most recent call last):
     ...
@@ -29,11 +34,6 @@
 	Traceback (most recent call last):
 	...
 	SyntaxError: invalid syntax
-
------------------------------
-
-	>>> print(add_integer(10))
-	108
 
 -----------------------------
 
