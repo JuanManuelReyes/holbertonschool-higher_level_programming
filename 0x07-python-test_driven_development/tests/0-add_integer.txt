@@ -9,23 +9,19 @@
 
 ======== Test Cases: ========
 
-Maximum and minimum numbers for python ("inf" represents infinity):
-
-	Maxmimum number:
+-----------------------------
 
 	>>> add_integer(float("inf"), 2)
-     	Traceback (most recent call last):
-     	...
-     	OverflowError: cannot convert float infinity to integer
+    Traceback (most recent call last):
+    ...
+    OverflowError: cannot convert float infinity to integer
 
-	Minimum number:
+-----------------------------
 
 	>>> add_integer(float("-inf"), -2)
-     	Traceback (most recent call last):
-     	...
-     	OverflowError: cannot convert float infinity to integer
-
-
+    Traceback (most recent call last):
+    ...
+    OverflowError: cannot convert float infinity to integer
 
 -----------------------------
 
