@@ -6,6 +6,16 @@
 
 ======== Test Cases: ========
 
+        >>> matrix_mul(["pepocho", "betty"], [[4, 1]])
+        Traceback (most recent call last):
+        ...
+        TypeError: m_a must be a list of lists
+
+        >>> matrix_mul([[1, 0]], ["betina", "pep8"])
+        Traceback (most recent call last):
+        ...
+        TypeError: m_b must be a list of lists
+
 -----------------------------
 
         >>> matrix_mul([[1, 2], [3, 4]], [[2, 0], [1, 2]])
@@ -64,10 +74,3 @@
         TypeError: m_a must be a list
 
 -----------------------------
-        >>> matrix_mul(["pepocho", "betty"], [[4, 1]])
-        Traceback (most recent call last):
-        TypeError: m_a must be a list of lists
-
-        >>> matrix_mul([[1, 0]], ["betina", "pep8"])
-        Traceback (most recent call last):
-        TypeError: m_b must be a list of lists
