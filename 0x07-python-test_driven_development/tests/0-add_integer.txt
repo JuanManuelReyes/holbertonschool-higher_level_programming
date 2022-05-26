@@ -62,8 +62,3 @@
 
 -----------------------------
 
-	>>> infinity = float("inf")
-	>>> add_integer(float("infinity"), 2)
-    Traceback (most recent call last):
-    ...
-    OverflowError: cannot convert float infinity to integer
