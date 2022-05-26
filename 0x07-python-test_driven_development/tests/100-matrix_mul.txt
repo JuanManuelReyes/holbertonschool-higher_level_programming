@@ -64,3 +64,15 @@
         TypeError: m_a must be a list
 
 -----------------------------
+
+        >>> matrix_mul([], [[616, 919]])
+        Traceback (most recent call last):
+        ...
+        ValueError: m_a can't be empty
+
+-----------------------------
+
+        >>> matrix_mul([[666, 777]], [[]])
+        Traceback (most recent call last):
+        ...
+        ValueError: m_b can't be empty
