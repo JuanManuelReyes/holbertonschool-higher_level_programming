@@ -11,11 +11,6 @@
 
 -----------------------------
 
-	>>> print(add_integer(10))
-	108
-
------------------------------
-
 	>>> add_integer(float("inf"), 2)
     Traceback (most recent call last):
     ...
@@ -30,10 +25,15 @@
 
 -----------------------------
 
-	>>> add_integer( , )
+	>>> print(add_integer(float(None), -2)
 	Traceback (most recent call last):
-	...
-	SyntaxError: invalid syntax
+    ...
+	ValueError: cannot convert float NaN to integer
+
+-----------------------------
+
+	>>> print(add_integer(10))
+	108
 
 -----------------------------
 
