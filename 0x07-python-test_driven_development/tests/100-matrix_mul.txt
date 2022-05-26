@@ -71,9 +71,10 @@
         TypeError: m_a must be a list of lists
 
 -----------------------------
+
         >>> matrix_mul([[7, 7]], ["First", "Test"])
         Traceback (most recent call last):
         ...
         TypeError: m_b must be a list of lists
-        
+
 -----------------------------
