@@ -25,10 +25,10 @@
 
 -----------------------------
 
-	>>> print(add_integer(float(None), -2)
-	Traceback (most recent call last):
-    ...
-	ValueError: cannot convert float NaN to integer
+	>>> add_integer(float('nan'))
+    Traceback (most recent call last):
+	...
+    ValueError: cannot convert float NaN to integer
 
 -----------------------------
 
