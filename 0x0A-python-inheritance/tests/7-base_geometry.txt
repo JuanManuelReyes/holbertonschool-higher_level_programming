@@ -1,0 +1,147 @@
+======== Function Tests ========
+======= 7-base_geometry.py =======
+
+
+-------- ImportFunction --------
+
+	>>> BaseGeometry = __import__('7-base_geometry').BaseGeometry
+
+    >>> bg = BaseGeometry()
+
+======== Test Cases: ========
+
+-----------------------------
+
+    >>> bg.integer_validator("Test", 100)
+
+-----------------------------
+
+    >>> bg = BaseGeometry()
+    >>> bg.area()
+    Traceback (most recent call last):
+    ...
+    Exception: area() is not implemented
+
+-----------------------------
+
+    >>> bg = BaseGeometry()
+    >>> bg.integer_validator("Test", -1)
+    Traceback (most recent call last):
+    ...
+    ValueError: Test must be greater than 0
+
+-----------------------------
+
+    >>> bg = BaseGeometry()
+    >>> bg.integer_validator("Test", 0)
+    Traceback (most recent call last):
+    ...
+    ValueError: Test must be greater than 0
+
+-----------------------------
+
+    >>> bg = BaseGeometry()
+    >>> bg.integer_validator("Test", None)
+    Traceback (most recent call last):
+    ...
+    TypeError: Test must be an integer
+
+-----------------------------
+
+    >>> bg = BaseGeometry()
+    >>> bg.integer_validator("Test", "School")
+    Traceback (most recent call last):
+    ...
+    TypeError: Test must be an integer
+
+-----------------------------
+
+    >>> bg = BaseGeometry()
+    >>> bg.integer_validator("Test", ["School"])
+    Traceback (most recent call last):
+    ...
+    TypeError: Test must be an integer
+
+-----------------------------
+
+    >>> bg = BaseGeometry()
+    >>> bg.integer_validator("Test", {"School"})
+    Traceback (most recent call last):
+    ...
+    TypeError: Test must be an integer
+
+-----------------------------
+
+    >>> bg = BaseGeometry()
+    >>> bg.integer_validator("Test", {"key": "School"})
+    Traceback (most recent call last):
+    ...
+    TypeError: Test must be an integer
+
+-----------------------------
+
+    >>> bg = BaseGeometry()
+    >>> bg.integer_validator("Test")
+    Traceback (most recent call last):
+    ...
+    TypeError: integer_validator() missing 1 required positional argument: 'value'
+
+-----------------------------
+
+    >>> bg = BaseGeometry()
+    >>> bg.integer_validator("Test", True)
+    Traceback (most recent call last):
+    ...
+    TypeError: Test must be an integer
+
+-----------------------------
+
+    >>> bg = BaseGeometry()
+    >>> bg.integer_validator()
+    Traceback (most recent call last):
+    ...
+    TypeError: integer_validator() missing 2 required positional arguments: 'name' and 'value'
+
+-----------------------------
+
+    >>> 'area' in dir(BaseGeometry)
+    True
+
+-----------------------------
+
+    >>> 'integer_validator' in dir(BaseGeometry)
+    True
+
+-----------------------------
+
+    >>> bg = BaseGeometry()
+    >>> dir(bg) == dir(BaseGeometry)
+    True
+
+-----------------------------
+
+    >>> bg = BaseGeometry()
+
+-----------------------------
+
+    >>> 'area' in dir(BaseGeometry)
+    True
+
+-----------------------------
+
+    >>> 'integer_validator' in dir(BaseGeometry)
+    True
+
+-----------------------------
+
+    >>> dir(bg) == dir(BaseGeometry)
+    True
+
+-----------------------------
+
+    >>> bg.integer_validator("Test", (4, ))
+    Traceback (most recent call last):
+    ...
+    TypeError: Test must be an integer
+
+-----------------------------
