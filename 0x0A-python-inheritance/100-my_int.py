@@ -16,5 +16,5 @@ class MyInt(int):
 
     def __ne__(self, num2):
         """asd asd asd"""
-        
+
         return self.num1 == num2
