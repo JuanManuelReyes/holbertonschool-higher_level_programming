@@ -5,7 +5,7 @@
 def is_kind_of_class(obj, a_class):
     """asd asd asd"""
 
-    if isinstance(obj, a_class) == True:
+    if isinstance(obj, a_class) is True:
         return True
     else:
         return False
