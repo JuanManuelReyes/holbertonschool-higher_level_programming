@@ -31,20 +31,12 @@ def pascal_triangle(n):
 
 
 def pascal_triangle(n):
-    if n <= 0:
-        return []
-    elif n == 1:
-        return [[1]]
-
-    pt = [[1]]
-
-    for i in range(n - 1): 
-        print(pt) 
-        newlist=[] 
-        newlist.append(pt[0]) 
-        for i in range(len(pt)-1): 
-            newlist.append(pt[i]+pt[i+1]) 
-        newlist.append(pt[-1]) 
-        pt=newlist 
-
-    return pt
+    lis=[1] 
+    for i in range(n): 
+    print(lis) 
+    newlist=[] 
+    newlist.append(lis[0]) 
+    for i in range(len(lis)-1): 
+        newlist.append(lis[i]+lis[i+1]) 
+    newlist.append(lis[-1]) 
+    lis=newlist 
