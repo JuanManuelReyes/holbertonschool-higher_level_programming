@@ -38,7 +38,7 @@ def pascal_triangle(n):
         return [[1]]
 
     pt=[1] 
-    for i in range(10): 
+    for i in range(n): 
         print(pt) 
         newlist=[] 
         newlist.append(pt[0]) 
