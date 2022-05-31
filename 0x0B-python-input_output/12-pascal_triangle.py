@@ -4,6 +4,12 @@
 
 def pascal_triangle(n):
     """asd asd asd"""
+
+    if n <= 0:
+        return []
+    if n == 1:
+        return [[1]]
+
     pt = [[1]]
 
     for rows in range(n-1):
