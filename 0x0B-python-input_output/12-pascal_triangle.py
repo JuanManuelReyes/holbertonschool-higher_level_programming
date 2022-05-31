@@ -2,16 +2,17 @@
 """asd asd asd"""
 
 def pascal_triangle(n):
-    pt = []
+    pt = [[1]]
 
-    for i in range(n):
-        size = []
-        if i is 0:
-            size.append(1)
-            pt = pt + size
-        else:
-            for a in range(i):
-                size
+    for rows in range(n-1):
+        list = [1]
+        for i in range(rows):
+            list.append(pt[-1][i] + pt[-1][i+1])
+
+        list.append(1)
+        pt.append(list)
+
+    return pt
 
 """
 def pascal_triangle(n):
