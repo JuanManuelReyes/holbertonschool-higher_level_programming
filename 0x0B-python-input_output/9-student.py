@@ -1,0 +1,18 @@
+#!/usr/bin/python3
+"""asd asd asd"""
+
+
+class Student:
+    """asd asd asd"""
+
+    def __init__(self, first_name, last_name, age):
+        """asd asd asd"""
+
+        self.first_name = first_name
+        self.last_name = last_name
+        self.age = age
+
+    def to_json(self):
+        """asd asd asd"""
+
+        return self.__dict__
