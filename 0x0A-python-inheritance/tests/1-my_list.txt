@@ -10,6 +10,24 @@
 
 -----------------------------
 
+    >>> module_doc = __import__('1-my_list').__doc__
+	>>> print(len(module_doc) > 0)
+	True
+
+-----------------------------
+
+	>>> class_doc = __import__('1-my_list').MyList.__doc__
+	>>> print(len(class_doc) > 0)
+	True
+
+-----------------------------
+
+	>>> function_doc = __import__('1-my_list').MyList.print_sorted.__doc__
+	>>> print(len(function_doc) > 0)
+	True
+
+-----------------------------
+
 	>>> my_list = MyList()
     >>> my_list.append(100)
     >>> my_list.append(10)
