@@ -9,4 +9,3 @@ def load_from_json_file(filename):
 
     with open(filename, "r") as _file:
         return json.load(_file)
-
