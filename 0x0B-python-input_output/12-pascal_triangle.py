@@ -13,7 +13,7 @@ def pascal_triangle(n):
         print(pt)
         newlist=[]
         newlist.append(pt[0])
-        for i in range(len(pt)-1):
-            newlist.append(pt[i]+pt[i+1])
+        for i in range(len(pt) - 1):
+            newlist.append(pt[i] + pt[i + 1])
         newlist.append(pt[-1])
         pt=newlist
