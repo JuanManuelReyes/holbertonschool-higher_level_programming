@@ -1,9 +1,10 @@
 #!/usr/bin/python3
-import json
 """asd asd asd"""
 
 
-def from_json_string(my_obj):
+def from_json_string(my_str):
     """asd asd asd"""
 
-    return json.loads(my_obj)
+    import json
+
+    return json.dumps(my_str)
