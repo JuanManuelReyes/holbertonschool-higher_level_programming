@@ -1,7 +1,15 @@
 #!/usr/bin/python3
 """asd asd asd"""
 
+
 def pascal_triangle(n):
+    """asd asd asd"""
+
+    if n <= 0:
+        return []
+    if n == 1:
+        return [[1]]
+
     pt = [[1]]
 
     for rows in range(n-1):
@@ -14,9 +22,9 @@ def pascal_triangle(n):
 
     return pt
 
+
 """
 def pascal_triangle(n):
-
     if n <= 0:
         return []
     if n == 1:
