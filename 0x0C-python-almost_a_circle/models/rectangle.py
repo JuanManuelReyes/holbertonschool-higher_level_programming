@@ -10,7 +10,7 @@ class Rectangle(Base):
 
     def __init__(self, width, height, x=0, y=0, id=None):
         """Initialize"""
-        
+
         super().__init__(id)
         self.width = width
         self.height = height
@@ -85,26 +85,26 @@ class Rectangle(Base):
         """asd asd asd"""
 
         for i in range(self.y):
-                print("")
+            print("")
 
         for x in range(self.__height):
             for y in range(self.__x):
-                    print(" ", end="")
+                print(" ", end="")
 
             for z in range(self.__width):
                 print("#", end="")
 
             print("")
-    
+
     def __str__(self):
         """asd asd asd"""
 
         return "[Rectangle] ({}) {}/{} - {}/{}".format(
             self.id, self.__x, self.__y, self.__width, self.__height)
-    
+
     def update(self, *args, **kwargs):
         """asd asd asd"""
-        
+
         attrs = ["id", "width", "height", "x", "y"]
 
         if len(args) == 0:
@@ -116,7 +116,7 @@ class Rectangle(Base):
                 break
 
             setattr(self, attrs[pos], arg)
-        
+
     def to_dictionary(self):
         """asd asd asd"""
 
