@@ -3,7 +3,6 @@
 
 import json
 import csv
-import os
 
 
 class Base():
@@ -97,10 +96,12 @@ class Base():
 
             for object in list_objs:
                 if cls.__name__ == "Rectangle":
-                    writer.writerow([object.id, object.width, object.height, object.x, object.y])
+                    writer.writerow([object.id, object.width, object.height,
+                                     object.x, object.y])
 
                 if cls.__name__ == "Square":
-                    writer.writerow([object.id, object.size, object.x, object.y])
+                    writer.writerow([object.id, object.size, object.x,
+                                     object.y])
 
     @classmethod
     def load_from_file_csv(cls):
@@ -116,12 +117,12 @@ class Base():
             for row in reader:
                 if cls.__name__ == "Rectangle":
                     dict = {"id": int(row[0]), "width": int(row[1]),
-                           "height": int(row[2]), "x": int(row[3]),
-                           "y": int(row[4])}
+                            "height": int(row[2]), "x": int(row[3]),
+                            "y": int(row[4])}
 
                 if cls.__name__ == "Square":
                     dict = {"id": int(row[0]), "size": int(row[1]),
-                           "x": int(row[2]), "y": int(row[3])}
+                            "x": int(row[2]), "y": int(row[3])}
 
                 list.append(cls.create(**dict))
 
