@@ -116,11 +116,8 @@ class Base():
 
         filename = cls.__name__ + ".csv"
 
-        if not os.path.isfile(filename):
-            return (list)
-
-        with open(filename) as f:
-            reader = csv.DictReader(f)
+        with open(filename, "r", newline="") as f:
+            reader = csv.reader(f)
 
             for row in reader:
                 row = {key: int(row[key]) for key in row.keys()}
