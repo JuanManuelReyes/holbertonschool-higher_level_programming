@@ -120,7 +120,15 @@ class Base():
             reader = csv.reader(f)
 
             for row in reader:
-                row = {key: int(row[key]) for key in row.keys()}
-                list.append(cls.create(**row))
+                if cls.__name__ == "Rectangle":
+                    dict = {"id": int(row[0]), "width": int(row[1]),
+                           "height": int(row[2]), "x": int(row[3]),
+                           "y": int(row[4])}
+
+                if cls.__name__ == "Square":
+                    dict = {"id": int(row[0]), "size": int(row[1]),
+                           "x": int(row[2]), "y": int(row[3])}
+
+                list.append(cls.create(**dict))
 
         return(list)
