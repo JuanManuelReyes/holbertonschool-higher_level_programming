@@ -3,7 +3,6 @@
 
 import unittest
 import json
-import os
 
 from models import base
 from models import rectangle
