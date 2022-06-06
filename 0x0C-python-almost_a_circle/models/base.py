@@ -71,7 +71,7 @@ class Base():
         list = []
 
         try:
-            with open(filename, mode="r+", encoding="UTF-8") as f:
+            with open(filename, mode="r") as f:
                 raw_json = f.read()
 
             dic_list = cls.from_json_string(raw_json)
