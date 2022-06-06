@@ -40,7 +40,7 @@ class Base():
 
         with open(filename, 'w') as f:
             f.write(cls.to_json_string(list))
-    
+
     @staticmethod
     def from_json_string(json_string):
         """asd asd asd"""
@@ -78,7 +78,7 @@ class Base():
 
             for i in dic_list:
                 list.append(cls.create(**i))
-                
+
         except Exception:
             pass
 
