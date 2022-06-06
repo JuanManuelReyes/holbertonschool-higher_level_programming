@@ -11,7 +11,7 @@ from models import rectangle
 Base = base.Base
 Rectangle = rectangle.Rectangle
 
-class TestBase(unittest.TestCase):
+class testBase(unittest.TestCase):
     """asd asd asd"""
 
     def test_id(self):
