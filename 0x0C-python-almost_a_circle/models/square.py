@@ -1,7 +1,6 @@
 #!/usr/bin/python3
 """asd asd asd"""
 
-from attr import attrib
 from models.rectangle import Rectangle
 
 
