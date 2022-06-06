@@ -23,7 +23,7 @@ class Base():
         """asd asd asd"""
 
         if list_dictionaries is None or len(list_dictionaries) == 0:
-            return str(json.dumps(list_dictionaries))
+            return "[]"
         else:
             return json.dumps(list_dictionaries)
 
