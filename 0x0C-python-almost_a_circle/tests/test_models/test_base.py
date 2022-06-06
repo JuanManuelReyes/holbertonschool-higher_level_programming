@@ -10,6 +10,17 @@ from models.base import Base
 from models.rectangle import Rectangle
 from models.square import Square
 
+<<<<<<< HEAD
+=======
+from models import base
+from models import rectangle
+
+Base = base.Base
+Rectangle = rectangle.Rectangle
+
+class test_Base(unittest.TestCase):
+    """asd asd asd"""
+>>>>>>> 4ac2eb707f7d1b184fe95c172bdc88f92d17dc69
 
 class test_Base(unittest.TestCase):
     """def class TestBase"""
