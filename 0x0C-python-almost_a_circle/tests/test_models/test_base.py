@@ -4,10 +4,11 @@
 import unittest
 import json
 
+from models import base
+from models import rectangle
 
-from models.base import Base
-from models.rectangle import Rectangle
-from models.square import Square
+Base = base.Base
+Rectangle = rectangle.Rectangle
 
 class testBase(unittest.TestCase):
     """asd asd asd"""
