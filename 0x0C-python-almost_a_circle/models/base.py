@@ -90,23 +90,17 @@ class Base():
     def save_to_file_csv(cls, list_objs):
         """asd asd asd"""
 
-        my_list_objs = [x.to_dictionary() for x in list_objs]
-
         filename = cls.__name__ + ".csv"
 
-        if(cls.__name__ == "Rectangle"):
-            columns = ["id", "width", "height", "x", "y"]
+        with open(filename, 'w', newline='') as f:
+            writer = csv.writer(f)
 
-        if(cls.__name__ == "Square"):
-            columns = ["id", "size", "x", "y"]
+            for object in list_objs:
+                if cls.__name__ == "Rectangle":
+                    writer.writerow([object.id, object.width, object.height, object.x, object.y])
 
-        with open(filename, "w") as f:
-            writer = csv.DictWriter(f, fieldnames=columns)
-
-        writer.writeheader()
-
-        for dict in list_objs:
-            writer.writerow(dict.to_dictionary())
+                if cls.__name__ == "Square":
+                    writer.writerow([object.id, object.size, object.x, object.y])
 
     @classmethod
     def load_from_file_csv(cls):
