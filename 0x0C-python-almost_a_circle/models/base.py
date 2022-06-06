@@ -2,6 +2,8 @@
 """asd asd asd"""
 
 import json
+import csv
+import os
 
 
 class Base():
@@ -83,3 +85,45 @@ class Base():
             pass
 
         return list
+
+    @classmethod
+    def save_to_file_csv(cls, list_objs):
+        """asd asd asd"""
+
+        my_list_objs = [x.to_dictionary() for x in list_objs]
+
+        filename = cls.__name__ + ".csv"
+
+        if(cls.__name__ == "Rectangle"):
+            columns = ["id", "width", "height", "x", "y"]
+
+        if(cls.__name__ == "Square"):
+            columns = ["id", "size", "x", "y"]
+
+        with open(filename, "w") as f:
+            writer = csv.DictWriter(f, fieldnames=columns)
+
+        writer.writeheader()
+
+        for dict in list_objs:
+            writer.writerow(dict.to_dictionary())
+
+    @classmethod
+    def load_from_file_csv(cls):
+        """asd asd asd"""
+
+        list = []
+
+        filename = cls.__name__ + ".csv"
+
+        if not os.path.isfile(filename):
+            return (list)
+
+        with open(filename) as f:
+            reader = csv.DictReader(f)
+
+            for row in reader:
+                row = {key: int(row[key]) for key in row.keys()}
+                list.append(cls.create(**row))
+
+        return(list)
