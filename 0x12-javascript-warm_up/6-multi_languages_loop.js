@@ -2,5 +2,5 @@
 const frases = ['C is fun', 'Python is cool', 'JavaScript is amazing'];
 
 frases.forEach(element => {
-        console.log(element);
+  console.log(element);
 });
