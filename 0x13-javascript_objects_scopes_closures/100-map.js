@@ -1,5 +1,5 @@
 #!/usr/bin/node
-const array = require("./mains/100-data").list;
+const array = require('./mains/100-data').list;
 
 const newArray = array.map((x, index) => {
   return x * index;
