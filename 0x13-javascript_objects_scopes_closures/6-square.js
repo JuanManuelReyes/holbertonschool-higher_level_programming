@@ -8,7 +8,7 @@ module.exports = class Square extends SquareConstructor {
       this.print();
     } else {
       for (let i = 0; i < this.height; i++) {
-	console.log(charC.repeat(this.width));
+        console.log(charC.repeat(this.width));
       }
     }
   }
