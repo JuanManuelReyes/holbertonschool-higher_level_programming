@@ -1,12 +1,12 @@
 #!/usr/bin/node
-const char = "X";
+const char = 'X';
 module.exports = class Rectangle {
-  constructor(w, h) {
+  constructor (w, h) {
     if (
       w <= 0 ||
       h <= 0 ||
-      typeof w === "undefined" ||
-      typeof h === "undefined"
+      typeof w === 'undefined' ||
+      typeof h === 'undefined'
     ) {
     } else {
       this.width = w;
@@ -14,7 +14,7 @@ module.exports = class Rectangle {
     }
   }
 
-  print() {
+  print () {
     for (let i = 0; i < this.height; i++) {
       console.log(char.repeat(this.width));
     }
