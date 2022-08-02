@@ -1,5 +1,5 @@
 #!/usr/bin/node
-const SquareConstructor = require('./5-square');
+const SquareConstructor = require('./5-square.js');
 
 module.exports = class Square extends SquareConstructor {
   charPrint (c) {
