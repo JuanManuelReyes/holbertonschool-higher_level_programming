@@ -19,6 +19,4 @@ if (argv.length <= 3) {
                 counter++;
         }
         console.log(second_max);
-
-
 }
