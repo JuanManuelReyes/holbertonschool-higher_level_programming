@@ -7,7 +7,7 @@ module.exports = class Rectangle {
       typeof w === 'undefined' ||
       typeof h === 'undefined'
     ) {
-
+      return;
     } else {
       this.width = w;
       this.height = h;
