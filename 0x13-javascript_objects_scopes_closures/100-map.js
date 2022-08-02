@@ -1,8 +1,8 @@
 #!/usr/bin/node
-const array = require('./mains/100-data').list;
+const list = require('./mains/100-data').list;
 
-const newArray = array.map((x, index) => {
+const newList = list.map((x, index) => {
   return x * index;
 });
-console.log(array);
-console.log(newArray);
+console.log(list);
+console.log(newList);
