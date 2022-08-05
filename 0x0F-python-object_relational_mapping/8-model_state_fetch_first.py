@@ -22,3 +22,5 @@ if (first_state):
         print(f"{first_state.id}: {first_state.name}")
 else:
         print("Nothing")
+        
+session.close()
