@@ -9,26 +9,26 @@ import MySQLdb
 from sys import argv
 
 if __name__ == "__main__":
-        """Conection to the DataBase"""
-        db = MySQLdb.connect(host="localhost", port=3306, 
-                             user=argv[1], 
-                             passwd=argv[2], 
-                             db=argv[3])
-        
-        """Cursor excecutes the SQL queries"""
-        cursor = db.cursor()
-        command = "SELECT name FROM cities \
+    """Conection to the DataBase"""
+    db = MySQLdb.connect(host="localhost", port=3306,
+                         user=argv[1],
+                         passwd=argv[2],
+                         db=argv[3])
+
+    """Cursor excecutes the SQL queries"""
+    cursor = db.cursor()
+    command = "SELECT name FROM cities \
                 WHERE state_id = (SELECT id FROM states WHERE name = %s) \
                         ORDER BY id ASC;"
-        cursor.execute(command, (argv[4],))
-        rows = cursor.fetchall()
-        
-        for x in range(len(rows)):
-                if (x != len(rows) - 1):
-                        print(rows[x][0], end=", ")
-                else:
-                       print(rows[x][0], end="") 
-        
-        print("")
-        cursor.close()
-        db.close()
+    cursor.execute(command, (argv[4],))
+    rows = cursor.fetchall()
+
+    for x in range(len(rows)):
+        if (x != len(rows) - 1):
+            print(rows[x][0], end=", ")
+        else:
+            print(rows[x][0], end="")
+
+    print("")
+    cursor.close()
+    db.close()
