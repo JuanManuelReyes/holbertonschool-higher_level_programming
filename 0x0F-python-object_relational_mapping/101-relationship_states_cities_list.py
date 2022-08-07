@@ -19,7 +19,7 @@ if __name__ == "__main__":
     session = Session()
 
     states = session.querry(State).orde_by(State.id).all()
-    
+
     for state in states:
         print(f"{state.id}: {state.name}")
         for city in state.cities:
