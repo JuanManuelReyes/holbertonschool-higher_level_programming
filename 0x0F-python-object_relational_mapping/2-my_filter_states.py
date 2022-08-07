@@ -16,7 +16,7 @@ if __name__ == "__main__":
 
     """Cursor excecutes the SQL queries"""
     cursor = db.cursor()
-    command = "SELECT * FROM states WHERE name LIKE\
+    command = "SELECT * FROM states WHERE name LIKE BINARY\
     '{}' ORDER BY id ASC;".format(
         argv[4])
     cursor.execute(command)
