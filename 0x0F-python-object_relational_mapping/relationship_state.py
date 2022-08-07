@@ -6,8 +6,7 @@ Base = declarative_base()
 """
 from sqlalchemy import Column, Integer, String
 from sqlalchemy.ext.declarative import declarative_base
-from sqlalchemy.orm import relationship, backref
-from relationship_city import Base, City
+from sqlalchemy.orm import relationship
 
 Base = declarative_base()
 
@@ -21,4 +20,4 @@ class State(Base):
 
     name = Column(String(128), nullable=False)
 
-    cities = relationship("City", backref="state", cascade="all, delete")
+    cities = relationship("City", backref="state")
