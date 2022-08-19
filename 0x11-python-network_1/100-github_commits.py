@@ -20,4 +20,4 @@ if __name__ == "__main__":
         if idx < 10:
             print("sha: {}: author {}".format(commit.get('sha'), commit.get('author')))
         else:
-            
+            exit
