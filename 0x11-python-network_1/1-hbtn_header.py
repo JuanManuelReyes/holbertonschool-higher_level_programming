@@ -8,6 +8,7 @@ if __name__ == "__main__":
     from urllib import request
     from sys import argv
 
-    with request.urlopen('https://intranet.hbtn.io/status') as response:
+    url = argv[1]
+    with request.urlopen(url) as response:
         content = response.headers.get('X-Request-Id')
         print(content)
