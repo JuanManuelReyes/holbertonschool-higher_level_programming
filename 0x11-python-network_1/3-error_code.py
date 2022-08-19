@@ -12,7 +12,7 @@ if __name__ == "__main__":
     url = argv[1]
     try:
         with request.urlopen(url) as response:
-            content = response.reaed().decode()
+            content = response.read().decode()
             print(content)
     except error.URLError as error:
         print("Error code:", error.code)
