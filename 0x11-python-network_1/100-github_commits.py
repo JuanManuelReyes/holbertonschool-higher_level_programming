@@ -17,4 +17,7 @@ if __name__ == "__main__":
     json = res.json()
 
     for idx, commit in enumerate(json):
-        print("sha: {}".format(commit.get('sha')))
+        if idx < 10:
+            print("sha: {}: author {}".format(commit.get('sha'), commit.get('author')))
+        else:
+            
