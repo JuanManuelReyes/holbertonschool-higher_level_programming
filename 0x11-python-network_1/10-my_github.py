@@ -14,7 +14,7 @@ if __name__ == "__main__":
 
     res = requests.get('https://api.github.com/user', auth=(user,token))
     json = res.json()
-    if len(json['id'] == None):
+    if len(json['id'] == 0):
         print(None)
     else:
         print(json['id'])
