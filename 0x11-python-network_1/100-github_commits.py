@@ -16,4 +16,4 @@ if __name__ == "__main__":
     res = requests.get(url)
     json = res.json()
 
-    print(json.text)
+    print(json['sha'])
