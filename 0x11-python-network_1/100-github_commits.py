@@ -10,7 +10,7 @@ if __name__ == "__main__":
 
     repo = argv[1]
     user = argv[2]
-    
+
     url = 'https://api.github.com/repos/{}/{}/commits'.format(repo, user)
 
     res = requests.get(url)
@@ -18,7 +18,7 @@ if __name__ == "__main__":
 
     for idx, commit in enumerate(json):
         if idx < 10:
-            print("{}: {}".format(commit.get('sha'),commit.get('commit')
+            print("{}: {}".format(commit.get('sha'), commit.get('commit')
                                   .get('author').get('name')))
         else:
             exit
