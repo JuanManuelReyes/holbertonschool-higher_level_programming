@@ -8,13 +8,13 @@ and uses the GitHub API to display your id
 if __name__ == "__main__":
     import requests
     from sys import argv
-    
+
     user = argv[1]
     token = argv[2]
 
     res = requests.get('https://api.github.com/user', auth=(user,token))
     json = res.json()
-    if len(json['id']) == 0:
+    try:
+        print(res.json()['id'])
+    except Exception as error:
         print(None)
-    else:
-        print(json['id'])
