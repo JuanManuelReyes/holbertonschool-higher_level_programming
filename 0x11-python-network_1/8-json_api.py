@@ -13,7 +13,7 @@ if __name__ == "__main__":
         q = str(argv[1])
     else:
         q = ""
-    
+
     data = {'q': q}
     res = requests.post("http://0.0.0.0:5000/search_user", data)
 
