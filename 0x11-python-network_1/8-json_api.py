@@ -22,6 +22,6 @@ if __name__ == "__main__":
         if(len(json)) == 0:
             print("NOAHYJSON")
         if(len(json) > 0):
-            print(json)
+            print("[{}] {}".format(json["id"], json["name"]))
     except ValueError as error:
         print("Not a valid JSON")
