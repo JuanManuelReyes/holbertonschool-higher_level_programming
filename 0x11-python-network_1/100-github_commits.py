@@ -11,7 +11,7 @@ if __name__ == "__main__":
     repo = argv[1]
     user = argv[2]
 
-    url = 'https://api.github.com/repos/{}/{}/commits'.format(repo, user)
+    url = 'https://api.github.com/repos/{}/{}/commits'.format(user, repo)
 
     res = requests.get(url)
     json = res.json()
