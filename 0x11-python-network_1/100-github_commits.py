@@ -18,7 +18,7 @@ if __name__ == "__main__":
 
     for idx, commit in enumerate(json):
         if idx < 10:
-            print("{}: {}".format(commit.get('sha'), commit.get('author')
-                                  .get('name')))
+            print("{}: {}".format(commit.get('sha'),commit.get('commit')
+                                  .get('author').get('name')))
         else:
             exit
