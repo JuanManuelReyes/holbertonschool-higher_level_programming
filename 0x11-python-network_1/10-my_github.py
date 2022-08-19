@@ -11,8 +11,7 @@ if __name__ == "__main__":
     
     user = argv[1]
     token = argv[2]
-    data = (user, token)
 
-    res = requests.get('https://api.github.com/user', data)
+    res = requests.get('https://api.github.com/user', data = (user, token))
     json = res.json()
     print(json)
