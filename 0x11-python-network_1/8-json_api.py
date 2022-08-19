@@ -20,7 +20,7 @@ if __name__ == "__main__":
     try:
         json = res.json()
         if(len(json)) == 0:
-            print("NOAHYJSON")
+            print("No result")
         if(len(json) > 0):
             print("[{}] {}".format(json["id"], json["name"]))
     except ValueError as error:
