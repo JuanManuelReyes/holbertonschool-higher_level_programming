@@ -16,4 +16,5 @@ if __name__ == "__main__":
     res = requests.get(url)
     json = res.json()
 
-    print(json['sha'])
+    for idx, commit in enumerate(json):
+        print("sha: {}".format(commit.get('sha')))
