@@ -16,5 +16,5 @@ if __name__ == "__main__":
     json = res.json()
     try:
         print(res.json()['id'])
-    except Exception as error:
+    except Exception:
         print(None)
