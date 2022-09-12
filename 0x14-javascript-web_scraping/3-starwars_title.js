@@ -1,11 +1,11 @@
 #!/usr/bin/node
-
 const id = process.argv[2];
 const url = 'https://swapi-api.hbtn.io/api/films/' + id;
-const axios = require('axios');
+const req = require('request');
 
-axios.get(url).then(res => {
+req.get(url, (err, res) => {
+  if (err) {
+    console.log('code: ' + err.res.status);
+  }
   console.log(res.data.title);
-}).catch(err => {
-  console.log('code: ' + err.res.status);
-})
+});
