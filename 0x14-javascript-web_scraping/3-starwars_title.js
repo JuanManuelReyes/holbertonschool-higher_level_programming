@@ -7,4 +7,4 @@ axios.get(url).then(res => {
   console.log(res.data.title);
 }).catch(err => {
   console.log('code: ' + err.res.status);
-})
+});
