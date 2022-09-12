@@ -9,7 +9,7 @@ axios.get(url).then(function (res) {
 
   fs.writeFile(file, data, err => {
     if (err) {
-        console.error(err);
+      console.error(err);
     }
   });
 }).catch(function (error) {
