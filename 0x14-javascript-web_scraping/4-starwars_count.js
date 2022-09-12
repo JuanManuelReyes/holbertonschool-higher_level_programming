@@ -8,12 +8,12 @@ axios.get(url).then(function (res) {
   for (let i = 0; i < movies.length; i++) {
     for (let x = 0; x < movies[i].characters.length; x++) {
       if (movies[i].characters[x].includes('18')) {
-        counter++; 
-        break; 
+        counter++;
+        break;
       }
     }
   }
   console.log(counter);
-  }).catch(function (error) {
-    console.log(`code: ${error.response.status}`);
+}).catch(function (error) {
+  console.log(`code: ${error.response.status}`);
 });
