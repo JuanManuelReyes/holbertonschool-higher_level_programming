@@ -17,5 +17,5 @@ axios.get(url)
     console.log(counter);
   })
   .catch(function (error) {
-    console.log('code: ' + error.res.status);
+    console.log(`code: ${error.response.status}`);
   });
