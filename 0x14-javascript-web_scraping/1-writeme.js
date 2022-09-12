@@ -1,6 +1,6 @@
 #!/usr/bin/node
-let file = process.argv[2]
-let string = process.argv[3]
+let file = process.argv[2];
+let string = process.argv[3];
 const fs = require('fs');
 
 fs.writeFile(file, string, 'utf8', (err, data) => {
